@@ -1,0 +1,552 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Баня «Русалочка» — Уфа, Сельская Богородская, 2А</title>
+<meta name="description" content="Баня «Русалочка» в Уфе: русская парная на дровах, бассейн, купель, семейные номера, кафе. Билеты от 450 ₽, номера от 1500 ₽. Запись через WhatsApp.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Marck+Script&family=Montserrat:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --deep:#06303b; --deep2:#0b4a58; --sea:#139aa3; --foam:#7fe0d6; --pearl:#fdf6ee;
+  --sand:#f6e9d8; --coral:#ff7a6b; --coral-d:#e8584a; --gold:#e9b44c; --violet:#8b6bd9;
+  --ink:#0d2a31; --muted:#4d6a70; --wa:#25d366; --wa-d:#1aa851;
+  --r:22px; --shadow:0 18px 40px -18px rgba(6,48,59,.45);
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;scroll-padding-top:76px}
+body{font-family:'Montserrat',system-ui,sans-serif;color:var(--ink);background:var(--pearl);line-height:1.6;overflow-x:hidden}
+img{max-width:100%;display:block}
+a{color:inherit;text-decoration:none}
+h1,h2,h3{font-family:'Playfair Display',Georgia,serif;line-height:1.15}
+.wrap{width:min(1160px,100% - 40px);margin-inline:auto}
+section{position:relative;padding:92px 0}
+.script{font-family:'Marck Script',cursive;color:var(--coral);font-size:1.7rem;display:block;margin-bottom:6px}
+.sec-head{text-align:center;max-width:680px;margin:0 auto 48px}
+.sec-head h2{font-size:clamp(2rem,4vw,2.9rem);color:var(--deep)}
+.sec-head p{color:var(--muted);margin-top:12px}
+.dark .sec-head h2{color:#fff}.dark .sec-head p{color:#bfe6e6}
+
+/* header */
+header{position:fixed;inset:0 0 auto 0;z-index:50;transition:.3s;background:linear-gradient(#06303bcc,#06303b00)}
+header.solid{background:rgba(6,48,59,.94);backdrop-filter:blur(10px);box-shadow:0 6px 24px -10px #0008}
+.nav{display:flex;align-items:center;justify-content:space-between;height:70px}
+.logo{display:flex;align-items:center;gap:10px;font-family:'Marck Script',cursive;font-size:2rem;color:#fff}
+.logo svg{width:34px;height:34px}
+nav ul{display:flex;gap:26px;list-style:none}
+nav a{color:#e6fbfa;font-weight:500;font-size:.92rem;position:relative;padding:6px 0}
+nav a::after{content:"";position:absolute;left:0;bottom:0;height:2px;width:0;background:var(--foam);transition:.3s}
+nav a:hover::after{width:100%}
+nav a:hover{color:#fff}
+.burger{display:none;background:none;border:0;color:#fff;font-size:1.8rem;cursor:pointer}
+
+/* buttons */
+.btn{display:inline-flex;align-items:center;gap:10px;padding:15px 28px;border-radius:999px;font-weight:600;font-size:1rem;border:2px solid transparent;cursor:pointer;transition:transform .25s,box-shadow .25s,background .25s,color .25s}
+.btn:hover{transform:translateY(-3px)}
+.btn-wa{background:var(--wa);color:#fff;box-shadow:0 10px 24px -8px #25d366aa}
+.btn-wa:hover{background:var(--wa-d);box-shadow:0 16px 30px -8px #25d366cc}
+.btn-ghost{border-color:#ffffff88;color:#fff}
+.btn-ghost:hover{background:#fff;color:var(--deep)}
+.btn-dark{border-color:var(--deep);color:var(--deep)}
+.btn-dark:hover{background:var(--deep);color:#fff}
+.wa-ic{width:22px;height:22px;fill:currentColor;flex:none}
+
+/* hero */
+.hero{min-height:100vh;padding:130px 0 150px;color:#fff;display:flex;align-items:center;
+  background:radial-gradient(circle at 80% 20%,#1ab5b3 0,transparent 45%),radial-gradient(circle at 10% 90%,#2d5fa8 0,transparent 40%),linear-gradient(160deg,#06303b,#0b4a58 60%,#0f6a74);overflow:hidden}
+.hero .scales{position:absolute;inset:0;opacity:.07;background-image:radial-gradient(circle at 50% 100%,transparent 55%,#fff 56%,#fff 60%,transparent 61%);background-size:46px 23px}
+.bubbles span{position:absolute;bottom:-60px;border-radius:50%;background:radial-gradient(circle at 30% 30%,#fff9,#7fe0d622 60%,transparent);border:1px solid #ffffff55;animation:rise linear infinite}
+@keyframes rise{to{transform:translateY(-115vh) translateX(30px);opacity:.1}}
+.hero-grid{position:relative;display:grid;grid-template-columns:1.1fr .9fr;gap:50px;align-items:center}
+.status{display:inline-flex;align-items:center;gap:10px;background:#ffffff18;border:1px solid #ffffff33;padding:8px 16px;border-radius:999px;font-size:.88rem;margin-bottom:22px}
+.dot{width:10px;height:10px;border-radius:50%;background:#aaa}
+.dot.open{background:#3be08a;box-shadow:0 0 0 0 #3be08a;animation:pulse 2s infinite}
+.dot.closed{background:var(--coral)}
+@keyframes pulse{70%{box-shadow:0 0 0 10px #3be08a00}100%{box-shadow:0 0 0 0 #3be08a00}}
+.hero h1{font-size:clamp(2.6rem,6vw,4.6rem);margin-bottom:20px}
+.hero h1 em{font-family:'Marck Script',cursive;font-style:normal;color:var(--foam);font-weight:400;display:block;font-size:1.15em}
+.hero p.lead{font-size:1.15rem;color:#d3f3f1;max-width:520px;margin-bottom:30px}
+.cta{display:flex;flex-wrap:wrap;gap:14px;margin-bottom:34px}
+.facts{display:flex;flex-wrap:wrap;gap:26px}
+.facts div b{display:block;font-family:'Playfair Display',serif;font-size:1.8rem;color:var(--gold)}
+.facts div span{font-size:.82rem;color:#bfe6e6}
+.shell-frame{position:relative;aspect-ratio:4/5;border-radius:50% 50% 24px 24px / 38% 38% 24px 24px;overflow:hidden;border:6px solid #ffffff44;box-shadow:0 30px 60px -20px #000a;animation:float 6s ease-in-out infinite}
+.shell-frame img{width:100%;height:100%;object-fit:cover}
+@keyframes float{50%{transform:translateY(-14px)}}
+.pearl{position:absolute;right:-12px;bottom:40px;background:#fff;color:var(--deep);padding:14px 20px;border-radius:18px;box-shadow:var(--shadow);text-align:center;z-index:2}
+.pearl b{font-family:'Playfair Display',serif;font-size:1.9rem;display:block;line-height:1}
+.pearl small{color:var(--muted);font-size:.74rem}
+.stars{color:var(--gold);letter-spacing:2px;font-size:.95rem}
+.hero-visual{position:relative}
+
+/* waves */
+.wave{position:absolute;left:0;width:100%;line-height:0;pointer-events:none}
+.wave svg{width:100%;height:80px;display:block}
+.wave.top{top:-1px}.wave.bot{bottom:-1px}
+
+/* about */
+.about{background:var(--pearl)}
+.about-grid{display:grid;grid-template-columns:1fr 1fr;gap:56px;align-items:center}
+.about-photos{position:relative;height:460px}
+.about-photos img{position:absolute;object-fit:cover;border-radius:var(--r);box-shadow:var(--shadow);transition:transform .5s}
+.about-photos img:nth-child(1){width:66%;height:78%;left:0;top:0}
+.about-photos img:nth-child(2){width:52%;height:50%;right:0;bottom:0;border:6px solid var(--pearl)}
+.about-photos:hover img:nth-child(1){transform:rotate(-2deg) scale(1.02)}
+.about-photos:hover img:nth-child(2){transform:rotate(2deg) scale(1.03)}
+.about h2{font-size:clamp(2rem,4vw,2.8rem);color:var(--deep);margin-bottom:16px}
+.about p{color:var(--muted);margin-bottom:14px}
+.chips{display:flex;flex-wrap:wrap;gap:10px;margin-top:20px}
+.chip{background:#fff;border:1px solid #cfe9e6;padding:8px 16px;border-radius:999px;font-size:.88rem;font-weight:500;color:var(--deep2);transition:.25s}
+.chip:hover{background:var(--sea);color:#fff;border-color:var(--sea);transform:translateY(-2px)}
+
+/* prices */
+.prices{background:linear-gradient(180deg,#e4f6f4,#f6fbfa);}
+.group-title{display:flex;align-items:center;gap:14px;margin:0 0 22px;font-size:1.5rem;color:var(--deep)}
+.group-title::after{content:"";flex:1;height:2px;background:repeating-linear-gradient(90deg,var(--sea) 0 8px,transparent 8px 16px);opacity:.4}
+.cards{display:grid;gap:22px;grid-template-columns:repeat(3,1fr);margin-bottom:54px}
+.card{position:relative;display:flex;flex-direction:column;background:#fff;border-radius:var(--r);padding:30px 26px 26px;box-shadow:0 10px 30px -18px rgba(6,48,59,.4);border:1px solid #d6ecea;overflow:hidden;transition:transform .35s,box-shadow .35s,border-color .35s}
+.card::before{content:"";position:absolute;inset:0 0 auto 0;height:6px;background:linear-gradient(90deg,var(--sea),var(--foam),var(--violet))}
+.card:hover{transform:translateY(-10px);box-shadow:0 26px 44px -18px rgba(6,48,59,.55);border-color:var(--sea)}
+.card .tag{font-size:.78rem;font-weight:600;letter-spacing:.06em;text-transform:uppercase;color:var(--sea)}
+.card h4{font-family:'Playfair Display',serif;font-size:1.3rem;margin:6px 0 4px;color:var(--deep)}
+.card .sub{font-size:.88rem;color:var(--muted)}
+.price{font-family:'Playfair Display',serif;font-size:2.7rem;color:var(--deep);margin:16px 0 4px}
+.price small{font-size:1.2rem;font-family:'Montserrat';color:var(--muted)}
+.card .go{margin-top:auto;padding-top:18px;display:flex;align-items:center;gap:8px;font-weight:600;color:var(--wa-d);opacity:0;transform:translateY(10px);transition:.3s}
+.card:hover .go,.card:focus-visible .go{opacity:1;transform:none}
+.card.feat{background:linear-gradient(160deg,var(--deep),var(--deep2));color:#fff;border:0}
+.card.feat h4,.card.feat .price{color:#fff}.card.feat .sub,.card.feat .price small{color:#bfe6e6}.card.feat .tag{color:var(--gold)}.card.feat .go{color:#7dffb0}
+.note{background:#fff;border-left:5px solid var(--gold);padding:16px 22px;border-radius:12px;font-size:.92rem;color:var(--muted);box-shadow:0 8px 20px -16px #0006}
+.note b{color:var(--deep)}
+
+/* features */
+.features{background:linear-gradient(170deg,#06303b,#0b4a58);color:#fff;overflow:hidden}
+.features .scales{position:absolute;inset:0;opacity:.05;background-image:radial-gradient(circle at 50% 100%,transparent 55%,#fff 56%,#fff 60%,transparent 61%);background-size:46px 23px}
+.fgrid{position:relative;display:grid;grid-template-columns:repeat(4,1fr);gap:20px}
+.feat-i{background:#ffffff0f;border:1px solid #ffffff22;border-radius:var(--r);padding:26px 20px;text-align:center;transition:.35s;backdrop-filter:blur(4px)}
+.feat-i:hover{background:#ffffff22;transform:translateY(-8px) rotate(-1deg);border-color:var(--foam)}
+.feat-i .ic{width:66px;height:66px;margin:0 auto 14px;border-radius:50%;display:grid;place-items:center;font-size:1.9rem;background:radial-gradient(circle at 30% 30%,#fff,#bff3ee 50%,#7fe0d6);box-shadow:0 8px 18px -6px #000a;transition:transform .5s}
+.feat-i:hover .ic{transform:rotate(360deg) scale(1.1)}
+.feat-i h3{font-size:1.1rem;margin-bottom:6px;font-family:'Montserrat';font-weight:600}
+.feat-i p{font-size:.86rem;color:#bfe6e6}
+.access{position:relative;margin-top:34px;background:#ffffff14;border-radius:var(--r);padding:20px 26px;display:flex;gap:16px;align-items:center;border:1px dashed #ffffff55}
+.access span{font-size:1.8rem}
+
+/* gallery */
+.gallery{background:var(--pearl)}
+.ggrid{display:grid;grid-template-columns:repeat(4,1fr);grid-auto-rows:200px;gap:14px}
+.ggrid figure{position:relative;overflow:hidden;border-radius:var(--r);cursor:zoom-in;box-shadow:0 10px 24px -16px #0007}
+.ggrid figure:nth-child(1){grid-column:span 2;grid-row:span 2}
+.ggrid figure:nth-child(4){grid-column:span 2}
+.ggrid img{width:100%;height:100%;object-fit:cover;transition:transform .6s}
+.ggrid figure:hover img{transform:scale(1.12)}
+.ggrid figcaption{position:absolute;left:0;right:0;bottom:0;padding:34px 16px 12px;color:#fff;font-weight:500;font-size:.9rem;background:linear-gradient(transparent,#06303bd9);transform:translateY(100%);transition:.35s}
+.ggrid figure:hover figcaption{transform:none}
+.lb{position:fixed;inset:0;background:#031a20ee;z-index:100;display:none;place-items:center;padding:20px;cursor:zoom-out}
+.lb.on{display:grid}.lb img{max-height:88vh;border-radius:14px}
+
+/* reviews */
+.reviews{background:linear-gradient(180deg,#e4f6f4,#f6fbfa)}
+.rating-box{display:grid;grid-template-columns:260px 1fr;gap:36px;align-items:center;background:#fff;border-radius:var(--r);padding:30px 34px;box-shadow:var(--shadow);margin-bottom:34px}
+.big{text-align:center}
+.big b{font-family:'Playfair Display',serif;font-size:4.4rem;color:var(--deep);line-height:1;display:block}
+.big small{color:var(--muted);display:block;margin-top:6px}
+.bars{display:grid;grid-template-columns:1fr 1fr;gap:10px 34px}
+.bar{font-size:.86rem}.bar .t{display:flex;justify-content:space-between;margin-bottom:3px;font-weight:500}
+.bar .tr{height:8px;border-radius:8px;background:#dcefed;overflow:hidden}
+.bar .fl{height:100%;width:0;border-radius:8px;background:linear-gradient(90deg,var(--sea),var(--foam));transition:width 1.2s cubic-bezier(.2,.8,.2,1)}
+.rgrid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
+.rev{background:#fff;border-radius:var(--r);padding:26px;border:1px solid #d6ecea;position:relative;transition:.35s;display:flex;flex-direction:column}
+.rev::before{content:"“";position:absolute;top:2px;right:20px;font-family:'Playfair Display',serif;font-size:5rem;color:var(--foam);opacity:.5;line-height:1}
+.rev:hover{transform:translateY(-8px) rotate(-.6deg);box-shadow:var(--shadow);border-color:var(--sea)}
+.rev p{font-size:.93rem;color:#2c4a50;margin:10px 0 18px}
+.who{margin-top:auto;display:flex;align-items:center;gap:12px}
+.av{width:42px;height:42px;border-radius:50%;display:grid;place-items:center;color:#fff;font-weight:700;background:linear-gradient(135deg,var(--sea),var(--violet))}
+.who b{display:block;font-size:.92rem}.who small{color:var(--muted);font-size:.78rem}
+.src{text-align:center;margin-top:28px}
+.src a{display:inline-block;padding:8px 0;color:var(--deep2);font-weight:600;border-bottom:2px solid var(--foam);transition:.25s}
+.src a:hover{color:var(--coral);border-color:var(--coral)}
+
+/* hours + contacts */
+.contacts{background:linear-gradient(170deg,#06303b,#0b4a58);color:#fff}
+.cgrid{display:grid;grid-template-columns:.9fr 1.1fr;gap:40px;align-items:stretch}
+.info{display:grid;gap:18px;align-content:start}
+.box{background:#ffffff12;border:1px solid #ffffff26;border-radius:var(--r);padding:22px 24px;transition:.3s}
+.box:hover{background:#ffffff1d;border-color:var(--foam)}
+.box h3{font-family:'Montserrat';font-size:.8rem;text-transform:uppercase;letter-spacing:.1em;color:var(--foam);margin-bottom:8px;font-weight:600}
+.box p,.box a.v{font-size:1.1rem}
+.box a.v{border-bottom:1px dashed #fff8;transition:.25s}.box a.v:hover{color:var(--gold);border-color:var(--gold)}
+.box small{color:#bfe6e6;display:block;margin-top:4px}
+.days{list-style:none;display:grid;gap:4px}
+.days li{display:flex;justify-content:space-between;padding:6px 12px;border-radius:10px;font-size:.95rem;transition:.2s}
+.days li:hover{background:#ffffff14}
+.days li.today{background:var(--sea);font-weight:600}
+.days li.off span:last-child{color:var(--coral)}
+.mapbox{border-radius:var(--r);overflow:hidden;min-height:480px;box-shadow:0 24px 50px -20px #000a;border:4px solid #ffffff33;position:relative}
+.mapbox iframe{position:absolute;inset:0;width:100%;height:100%;border:0}
+
+footer{background:#031f27;color:#8fb8bb;text-align:center;padding:34px 0 90px;font-size:.88rem}
+footer a{color:var(--foam);transition:.2s}footer a:hover{color:#fff}
+
+/* floating WhatsApp */
+.fab{position:fixed;right:22px;bottom:22px;z-index:60;display:flex;align-items:center;gap:0;background:var(--wa);color:#fff;border-radius:999px;height:60px;padding:0 17px;box-shadow:0 12px 28px -8px #25d366cc;transition:.35s;overflow:hidden}
+.fab svg{width:26px;height:26px;fill:#fff;flex:none}
+.fab span{max-width:0;overflow:hidden;white-space:nowrap;font-weight:600;transition:max-width .4s,margin .4s}
+.fab:hover{background:var(--wa-d);transform:translateY(-4px)}
+.fab:hover span{max-width:220px;margin-left:10px}
+.fab::after{content:"";position:absolute;inset:0;border-radius:inherit;box-shadow:0 0 0 0 #25d366;animation:ring 2.4s infinite}
+.fab-call{right:94px;background:var(--sea);box-shadow:0 12px 28px -8px #139aa3cc}
+.fab-call:hover{background:var(--deep2)}
+.fab-call::after{display:none}
+@keyframes ring{70%{box-shadow:0 0 0 16px #25d36600}100%{box-shadow:0 0 0 0 #25d36600}}
+
+.reveal{opacity:0;translate:0 30px;transition:opacity .8s,translate .8s,transform .35s,box-shadow .35s,background .35s,border-color .35s}
+.reveal.in{opacity:1;translate:0 0}
+
+@media (max-width:980px){
+  .hero-grid,.about-grid,.cgrid{grid-template-columns:1fr}
+  .hero-visual{max-width:380px;margin:0 auto}
+  .cards,.rgrid{grid-template-columns:1fr 1fr}
+  .fgrid{grid-template-columns:1fr 1fr}
+  .ggrid{grid-template-columns:1fr 1fr}
+  .rating-box{grid-template-columns:1fr}
+  nav ul{position:absolute;top:70px;left:0;right:0;flex-direction:column;gap:0;background:#06303bf5;padding:10px 20px 20px;display:none}
+  nav ul.open{display:flex}
+  nav ul a{display:block;padding:12px 0}
+  .burger{display:block}
+}
+@media (max-width:620px){
+  section{padding:64px 0}
+  .cards,.rgrid,.fgrid,.bars{grid-template-columns:1fr}
+  .ggrid{grid-auto-rows:150px}
+  .about-photos{height:340px}
+  .card .go{opacity:1;transform:none}
+  .hero{padding-bottom:110px}
+  .mapbox{min-height:360px}
+}
+@media (max-width:620px){
+  .wrap{width:calc(100% - 32px)}
+  .cta .btn{width:100%;justify-content:center;padding:14px 20px}
+  .hero{min-height:auto;padding-top:104px}
+  .facts{gap:18px}.facts div b{font-size:1.5rem}
+  .sec-head{margin-bottom:32px}
+  .rating-box{padding:22px 18px}.big b{font-size:3.4rem}
+  .card{padding:24px 20px 20px}.price{font-size:2.3rem}
+  .box{padding:18px}.box p,.box a.v{font-size:1rem}
+  .box a.v{display:inline-block;padding:6px 0}
+  .access{flex-direction:column;text-align:center}
+  .pearl{right:0;bottom:16px;padding:10px 14px}
+  .ggrid figure:nth-child(1),.ggrid figure:nth-child(4){grid-column:span 2}
+  .ggrid figure:nth-child(1){grid-row:span 1}
+  .ggrid figcaption{transform:none;padding-top:24px;font-size:.8rem}
+  .fab{height:54px;padding:0 15px;right:14px;bottom:14px}
+  .fab-call{right:78px}
+  .fab:hover span{max-width:0;margin:0}
+  .hero-visual{max-width:300px}
+}
+@media (hover:none){.card .go{opacity:1;transform:none}}
+@media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}.reveal{opacity:1;translate:none}}
+</style>
+</head>
+<body>
+
+<header id="hdr">
+  <div class="wrap nav">
+    <a class="logo" href="#top" aria-label="Русалочка — на главную">
+      <svg viewBox="0 0 64 64" aria-hidden="true"><path fill="#7fe0d6" d="M32 6c-9 0-17 8-17 20 0 6 2 10 5 13-4 2-8 6-8 12h40c0-6-4-10-8-12 3-3 5-7 5-13C49 14 41 6 32 6z" opacity=".25"/><path fill="#fff" d="M32 10c-3 0-5 2-6 6-4 0-8 3-8 8 0 3 1 5 3 7l-4 15c8 4 14 4 22 0l-4-15c2-2 3-4 3-7 0-5-4-8-8-8-1-4-3-6-6-6z" opacity=".0"/><path fill="#fff" d="M8 40c8-2 12-8 16-8s6 6 8 6 4-6 8-6 8 6 16 8c-4 10-12 16-24 16S12 50 8 40z" opacity=".9"/><path fill="#e9b44c" d="M32 4l3 6h-6z"/><circle cx="32" cy="24" r="10" fill="#7fe0d6"/></svg>
+      Русалочка
+    </a>
+    <nav>
+      <button class="burger" id="burger" aria-label="Меню">☰</button>
+      <ul id="menu">
+        <li><a href="#about">О бане</a></li>
+        <li><a href="#prices">Цены</a></li>
+        <li><a href="#features">Особенности</a></li>
+        <li><a href="#gallery">Фото</a></li>
+        <li><a href="#reviews">Отзывы</a></li>
+        <li><a href="#contacts">Контакты</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main id="top">
+<!-- HERO -->
+<section class="hero">
+  <div class="scales"></div>
+  <div class="bubbles" id="bubbles"></div>
+  <div class="wrap hero-grid">
+    <div class="reveal">
+      <div class="status"><span class="dot" id="dot"></span><span id="statusText">Проверяем часы работы…</span></div>
+      <h1>Баня<em>«Русалочка»</em></h1>
+      <p class="lead">Русская парная на дровах, бассейн и купель, семейные номера и уютное кафе — в Калининском районе Уфы. Погрузитесь в тепло и лёгкость.</p>
+      <div class="cta">
+        <a class="btn btn-wa wa-link" data-msg="Здравствуйте! Хочу записаться в баню «Русалочка»." href="#" target="_blank" rel="noopener"><svg class="wa-ic" viewBox="0 0 32 32"><path d="M16 3C8.8 3 3 8.8 3 16c0 2.3.6 4.5 1.7 6.4L3 29l6.8-1.8c1.8 1 3.9 1.5 6.2 1.5 7.2 0 13-5.8 13-13S23.200 3 16 3zm0 23.700c-2 0-3.900-.5-5.500-1.500l-.4-.2-4 1.100 1.100-3.900-.3-.4C5.800 20.100 5.300 18.100 5.300 16 5.300 10 10.100 5.300 16 5.300S26.700 10 26.700 16 22 26.700 16 26.700zm5.900-8c-.3-.2-1.900-.9-2.200-1-.3-.1-.5-.2-.7.200s-.8 1-1 1.200c-.2.200-.4.200-.7.100-1.900-.9-3.100-1.700-4.300-3.800-.3-.6.300-.5.900-1.700.1-.2 0-.4 0-.5l-1-2.300c-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.6.100-.9.400-.3.300-1.100 1.100-1.100 2.600s1.100 3 1.300 3.200c.2.200 2.200 3.400 5.400 4.700 2 .8 2.800.9 3.800.7.600-.1 1.900-.8 2.200-1.500.3-.7.300-1.400.2-1.500-.1-.2-.3-.3-.6-.4z"/></svg>Записаться в WhatsApp</a>
+        <a class="btn btn-ghost" href="tel:+79273451189">📞 Позвонить</a>
+        <a class="btn btn-ghost" href="#prices">Смотреть цены</a>
+      </div>
+      <div class="facts">
+        <div><b>4,8</b><span>рейтинг на Яндекс Картах</span></div>
+        <div><b>от 450 ₽</b><span>билет в общее отделение</span></div>
+        <div><b>11–23</b><span>вт–вс, понедельник выходной</span></div>
+      </div>
+    </div>
+    <div class="hero-visual reveal">
+      <div class="shell-frame"><img src="img/p1.jpg" alt="Парная бани «Русалочка»"></div>
+      <div class="pearl"><b>4,8</b><span class="stars">★★★★★</span><br><small>676 оценок · 245 отзывов</small></div>
+    </div>
+  </div>
+  <div class="wave bot"><svg viewBox="0 0 1440 80" preserveAspectRatio="none"><path fill="#fdf6ee" d="M0 40c120 40 240 40 360 10s240-50 360-30 240 50 360 40 240-40 360-20v40H0z"/></svg></div>
+</section>
+
+<!-- ABOUT -->
+<section class="about" id="about">
+  <div class="wrap about-grid">
+    <div class="about-photos reveal">
+      <img src="img/p5.jpg" alt="Парилка с каменкой">
+      <img src="img/p3.jpg" alt="Бассейн с мозаикой">
+    </div>
+    <div class="reveal">
+      <span class="script">добро пожаловать</span>
+      <h2>Место, где можно провести время с пользой для здоровья</h2>
+      <p>«Русалочка» — баня в Уфе по адресу Сельская Богородская ул., 2А. Здесь есть парилка, сауна, бассейн и купель, а также отдельные номера с диванами и кушетками.</p>
+      <p>Парная — русская, на дровах. Прийти можно в общее отделение по билету без ограничения по времени или снять отдельный семейный номер для компании до 10 человек. После пара — кафе: шашлык, пицца, выпечка и напитки.</p>
+      <div class="chips">
+        <span class="chip">🔥 Русская парная на дровах</span>
+        <span class="chip">🌊 Бассейн и купель</span>
+        <span class="chip">🍽 Кафе при бане</span>
+        <span class="chip">🅿 Парковка</span>
+        <span class="chip">📶 Wi-Fi</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PRICES -->
+<section class="prices" id="prices">
+  <div class="wave top"><svg viewBox="0 0 1440 80" preserveAspectRatio="none" style="transform:scaleY(-1)"><path fill="#fdf6ee" d="M0 40c120 40 240 40 360 10s240-50 360-30 240 50 360 40 240-40 360-20v40H0z"/></svg></div>
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <span class="script">билеты и номера</span>
+      <h2>Цены</h2>
+      <p>Нажмите на карточку — откроется WhatsApp, и вы сразу сможете записаться.</p>
+    </div>
+
+    <h3 class="group-title reveal">🎟 Общее отделение</h3>
+    <div class="cards">
+      <a class="card wa-link reveal" data-msg="Здравствуйте! Интересует льготный билет (до 16:00) в баню «Русалочка» — 550 ₽." href="#" target="_blank" rel="noopener">
+        <span class="tag">Билет</span><h4>Льготный до 16:00</h4><span class="sub">Без ограничения по времени</span>
+        <div class="price">550 <small>₽</small></div>
+        <span class="go">Записаться в WhatsApp →</span>
+      </a>
+      <a class="card feat wa-link reveal" data-msg="Здравствуйте! Интересует полный билет в баню «Русалочка» — 650 ₽." href="#" target="_blank" rel="noopener">
+        <span class="tag">Основной</span><h4>Билет полный</h4><span class="sub">Без ограничения по времени</span>
+        <div class="price">650 <small>₽</small></div>
+        <span class="go">Записаться в WhatsApp →</span>
+      </a>
+      <a class="card wa-link reveal" data-msg="Здравствуйте! Интересует детский билет (7–12 лет) в баню «Русалочка» — 450 ₽." href="#" target="_blank" rel="noopener">
+        <span class="tag">Билет</span><h4>Детский, с 7 до 12 лет</h4><span class="sub">Без ограничения по времени</span>
+        <div class="price">450 <small>₽</small></div>
+        <span class="go">Записаться в WhatsApp →</span>
+      </a>
+    </div>
+
+    <h3 class="group-title reveal">🛖 Семейные номера (сауна)</h3>
+    <div class="cards">
+      <a class="card wa-link reveal" data-msg="Здравствуйте! Хочу забронировать Сауну №1 (до 4 человек) в бане «Русалочка» — 1500 ₽." href="#" target="_blank" rel="noopener">
+        <span class="tag">Сауна №1</span><h4>До 4 человек</h4><span class="sub">Для небольшой компании</span>
+        <div class="price">1 500 <small>₽</small></div>
+        <span class="go">Забронировать в WhatsApp →</span>
+      </a>
+      <a class="card feat wa-link reveal" data-msg="Здравствуйте! Хочу забронировать Сауну №2 (до 7 человек) в бане «Русалочка» — 1800 ₽." href="#" target="_blank" rel="noopener">
+        <span class="tag">Сауна №2</span><h4>До 7 человек</h4><span class="sub">Для друзей и семьи</span>
+        <div class="price">1 800 <small>₽</small></div>
+        <span class="go">Забронировать в WhatsApp →</span>
+      </a>
+      <a class="card wa-link reveal" data-msg="Здравствуйте! Хочу забронировать Сауну №3 (до 10 человек) в бане «Русалочка» — 2100 ₽." href="#" target="_blank" rel="noopener">
+        <span class="tag">Сауна №3</span><h4>До 10 человек</h4><span class="sub">Для большого праздника</span>
+        <div class="price">2 100 <small>₽</small></div>
+        <span class="go">Забронировать в WhatsApp →</span>
+      </a>
+    </div>
+
+  </div>
+</section>
+
+<!-- FEATURES -->
+<section class="features dark" id="features">
+  <div class="scales"></div>
+  <div class="wave top"><svg viewBox="0 0 1440 80" preserveAspectRatio="none"><path fill="#f6fbfa" d="M0 0h1440v40c-120 40-240 40-360 10S840 0 720 20 480 70 360 60 120 20 0 40z"/></svg></div>
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <span class="script">всё для отдыха</span>
+      <h2>Особенности</h2>
+    </div>
+    <div class="fgrid">
+      <div class="feat-i reveal"><div class="ic">🔥</div><h3>Русская парная</h3><p>Парная на дровах, а ещё сауна</p></div>
+      <div class="feat-i reveal"><div class="ic">🌊</div><h3>Бассейн и купель</h3><p>Плавательный бассейн и купель</p></div>
+      <div class="feat-i reveal"><div class="ic">🍽</div><h3>Кафе</h3><p>Горячая кухня, шашлык, напитки</p></div>
+      <div class="feat-i reveal"><div class="ic">📅</div><h3>Предзапись</h3><p>Можно записаться заранее</p></div>
+      <div class="feat-i reveal"><div class="ic">💳</div><h3>Оплата</h3><p>Наличные, карта, безналичный расчёт</p></div>
+      <div class="feat-i reveal"><div class="ic">🎁</div><h3>Подарочный сертификат</h3><p>А также скидки, акции и спецпредложения</p></div>
+      <div class="feat-i reveal"><div class="ic">🅿</div><h3>Парковка</h3><p>Рядом с баней</p></div>
+      <div class="feat-i reveal"><div class="ic">📶</div><h3>Wi-Fi</h3><p>Бесплатный интернет</p></div>
+    </div>
+    <div class="access reveal"><span>♿</span><div><b>Доступная среда.</b> Есть пандус, вход и помещение доступны для людей на инвалидной коляске. Всего в бане 10 мест в номере.</div></div>
+  </div>
+  <div class="wave bot"><svg viewBox="0 0 1440 80" preserveAspectRatio="none"><path fill="#fdf6ee" d="M0 40c120 40 240 40 360 10s240-50 360-30 240 50 360 40 240-40 360-20v40H0z"/></svg></div>
+</section>
+
+<!-- GALLERY -->
+<section class="gallery" id="gallery">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <span class="script">загляните внутрь</span>
+      <h2>Фотографии</h2>
+    </div>
+    <div class="ggrid">
+      <figure class="reveal"><img src="img/p1.jpg" alt="Парилка" loading="lazy"><figcaption>Парилка</figcaption></figure>
+      <figure class="reveal"><img src="img/p3.jpg" alt="Бассейн" loading="lazy"><figcaption>Бассейн</figcaption></figure>
+      <figure class="reveal"><img src="img/p2.jpg" alt="Кафе" loading="lazy"><figcaption>Кафе</figcaption></figure>
+      <figure class="reveal"><img src="img/p4.jpg" alt="Комната отдыха" loading="lazy"><figcaption>Комната отдыха</figcaption></figure>
+      <figure class="reveal"><img src="img/p7.jpg" alt="Парная с каменкой" loading="lazy"><figcaption>Парная с каменкой</figcaption></figure>
+      <figure class="reveal"><img src="img/p9.jpg" alt="Общее отделение" loading="lazy"><figcaption>Общее отделение</figcaption></figure>
+    </div>
+  </div>
+</section>
+<div class="lb" id="lb"><img alt=""></div>
+
+<!-- REVIEWS -->
+<section class="reviews" id="reviews">
+  <div class="wave top"><svg viewBox="0 0 1440 80" preserveAspectRatio="none" style="transform:scaleY(-1)"><path fill="#fdf6ee" d="M0 40c120 40 240 40 360 10s240-50 360-30 240 50 360 40 240-40 360-20v40H0z"/></svg></div>
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <span class="script">говорят гости</span>
+      <h2>Отзывы</h2>
+    </div>
+    <div class="rating-box reveal">
+      <div class="big"><b>4,8</b><span class="stars">★★★★★</span><small>676 оценок · 245 отзывов<br>на Яндекс Картах</small></div>
+      <div class="bars" id="bars">
+        <div class="bar" data-v="97"><div class="t"><span>Кухня</span><span>97%</span></div><div class="tr"><div class="fl"></div></div></div>
+        <div class="bar" data-v="95"><div class="t"><span>Напитки</span><span>95%</span></div><div class="tr"><div class="fl"></div></div></div>
+        <div class="bar" data-v="92"><div class="t"><span>Впечатления</span><span>92%</span></div><div class="tr"><div class="fl"></div></div></div>
+        <div class="bar" data-v="90"><div class="t"><span>Отдых</span><span>90%</span></div><div class="tr"><div class="fl"></div></div></div>
+        <div class="bar" data-v="89"><div class="t"><span>Баня</span><span>89%</span></div><div class="tr"><div class="fl"></div></div></div>
+        <div class="bar" data-v="86"><div class="t"><span>Персонал</span><span>86%</span></div><div class="tr"><div class="fl"></div></div></div>
+        <div class="bar" data-v="84"><div class="t"><span>Атмосфера</span><span>84%</span></div><div class="tr"><div class="fl"></div></div></div>
+        <div class="bar" data-v="62"><div class="t"><span>Бассейн</span><span>62%</span></div><div class="tr"><div class="fl"></div></div></div>
+      </div>
+    </div>
+    <div class="rgrid">
+      <article class="rev reveal"><span class="stars">★★★★★</span><p>Русалочка понравилась… парилка шикарная, затоплено на славу… в бассейне чистая комфортная вода, в номере чисто. Приду снова.</p><div class="who"><div class="av">Р</div><div><b>Резеда Зубаева</b><small>1 июля 2025</small></div></div></article>
+      <article class="rev reveal"><span class="stars">★★★★★</span><p>Просто отличный банный комплекс! Посещаю более 20 лет! Сначала отец меня водил, потом сам ходил с друзьями, теперь с сыном ходим.</p><div class="who"><div class="av">А</div><div><b>Алексей Чигиринов</b><small>19 января 2025</small></div></div></article>
+      <article class="rev reveal"><span class="stars">★★★★★</span><p>Очень замечательное место для всей семьи, вкусная еда. Тёплый чистый бассейн для детей. Хорошо провели время. Придём обязательно ещё.</p><div class="who"><div class="av">А</div><div><b>Анна Угрюмова</b><small>29 ноября 2024</small></div></div></article>
+      <article class="rev reveal"><span class="stars">★★★★★</span><p>Отличная баня. Чисто, аккуратно. Вентиляция на уровне! На парилке не экономят.</p><div class="who"><div class="av">В</div><div><b>Василий Боровков</b><small>12 января 2025</small></div></div></article>
+      <article class="rev reveal"><span class="stars">★★★★★</span><p>Хорошее заведение. Отмечала там день рождения, всё понравилось, номер отличный, персонал вежливый с юмором. Сауна так просто огонь.</p><div class="who"><div class="av">В</div><div><b>Вероника Якупова</b><small>29 июля 2025</small></div></div></article>
+      <article class="rev reveal"><span class="stars">★★★★★</span><p>Это самая лучшая баня в Калининском районе г. Уфы… тут очень уютно, чисто, пар просто бомба. Огромный плюс — кафе внутри бани.</p><div class="who"><div class="av">А</div><div><b>Алик Вагапов</b><small>Яндекс Карты</small></div></div></article>
+    </div>
+    <p class="src"><a href="https://yandex.ru/maps/org/rusalochka/218408068467/reviews/" target="_blank" rel="noopener">Все 245 отзывов на Яндекс Картах →</a></p>
+  </div>
+</section>
+
+<!-- CONTACTS -->
+<section class="contacts dark" id="contacts">
+  <div class="wave top"><svg viewBox="0 0 1440 80" preserveAspectRatio="none"><path fill="#f6fbfa" d="M0 0h1440v40c-120 40-240 40-360 10S840 0 720 20 480 70 360 60 120 20 0 40z"/></svg></div>
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <span class="script">ждём вас</span>
+      <h2>Как нас найти</h2>
+    </div>
+    <div class="cgrid">
+      <div class="info reveal">
+        <div class="box"><h3>Адрес</h3><p>г. Уфа, Сельская Богородская ул., 2А</p><small>1 этаж · Калининский район · ориентир — остановка «Заводоуправление УМПО» (125 м)</small></div>
+        <div class="box"><h3>Телефон</h3><p><a class="v" href="tel:+79273451189">+7 (927) 345-11-89</a></p><small>Этот же номер — в WhatsApp</small></div>
+        <div class="box"><h3>График работы</h3>
+          <ul class="days" id="days">
+            <li data-d="1" class="off"><span>Понедельник</span><span>выходной</span></li>
+            <li data-d="2"><span>Вторник</span><span>11:00–23:00</span></li>
+            <li data-d="3"><span>Среда</span><span>11:00–23:00</span></li>
+            <li data-d="4"><span>Четверг</span><span>11:00–23:00</span></li>
+            <li data-d="5"><span>Пятница</span><span>11:00–23:00</span></li>
+            <li data-d="6"><span>Суббота</span><span>11:00–23:00</span></li>
+            <li data-d="0"><span>Воскресенье</span><span>11:00–23:00</span></li>
+          </ul>
+        </div>
+        <div class="cta">
+          <a class="btn btn-wa wa-link" data-msg="Здравствуйте! Хочу записаться в баню «Русалочка»." href="#" target="_blank" rel="noopener"><svg class="wa-ic" viewBox="0 0 32 32"><path d="M16 3C8.8 3 3 8.8 3 16c0 2.3.6 4.5 1.7 6.4L3 29l6.8-1.8c1.8 1 3.9 1.5 6.2 1.5 7.2 0 13-5.8 13-13S23.200 3 16 3zm0 23.700c-2 0-3.900-.5-5.500-1.500l-.4-.2-4 1.100 1.100-3.900-.3-.4C5.800 20.100 5.300 18.100 5.300 16 5.300 10 10.100 5.300 16 5.300S26.700 10 26.700 16 22 26.700 16 26.700zm5.900-8c-.3-.2-1.900-.9-2.200-1-.3-.1-.5-.2-.7.200s-.8 1-1 1.200c-.2.200-.4.200-.7.100-1.900-.9-3.100-1.700-4.300-3.800-.3-.6.300-.5.900-1.700.1-.2 0-.4 0-.5l-1-2.300c-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.6.100-.9.400-.3.300-1.100 1.100-1.100 2.600s1.100 3 1.300 3.200c.2.200 2.200 3.400 5.400 4.700 2 .8 2.800.9 3.800.7.600-.1 1.900-.8 2.200-1.500.3-.7.300-1.400.2-1.500-.1-.2-.3-.3-.6-.4z"/></svg>Написать в WhatsApp</a>
+          <a class="btn btn-ghost" href="tel:+79273451189">📞 Позвонить</a>
+          <a class="btn btn-ghost" href="https://yandex.ru/maps/?rtext=~54.787734%2C56.126552&rtt=auto" target="_blank" rel="noopener">Построить маршрут</a>
+        </div>
+      </div>
+      <div class="mapbox reveal">
+        <iframe title="Баня «Русалочка» на Яндекс Картах" loading="lazy" allowfullscreen
+          src="https://yandex.ru/map-widget/v1/?ll=56.126552%2C54.787734&z=16&pt=56.126552%2C54.787734%2Cpm2rdl&l=map"></iframe>
+      </div>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap">Это демо-версия сайта. При первой просьбе данная информация будет удалена. Создатель @broodaholic</div>
+</footer>
+
+<a class="fab wa-link" data-msg="Здравствуйте! Хочу записаться в баню «Русалочка»." href="#" target="_blank" rel="noopener" aria-label="Написать в WhatsApp">
+  <svg viewBox="0 0 32 32"><path d="M16 3C8.8 3 3 8.8 3 16c0 2.3.6 4.5 1.7 6.4L3 29l6.8-1.8c1.8 1 3.9 1.5 6.2 1.5 7.2 0 13-5.8 13-13S23.200 3 16 3zm0 23.700c-2 0-3.900-.5-5.500-1.500l-.4-.2-4 1.100 1.100-3.900-.3-.4C5.800 20.100 5.300 18.100 5.300 16 5.300 10 10.100 5.300 16 5.300S26.700 10 26.700 16 22 26.700 16 26.700zm5.900-8c-.3-.2-1.900-.9-2.200-1-.3-.1-.5-.2-.7.200s-.8 1-1 1.200c-.2.200-.4.200-.7.100-1.900-.9-3.100-1.700-4.300-3.800-.3-.6.300-.5.900-1.700.1-.2 0-.4 0-.5l-1-2.300c-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.6.100-.9.400-.3.300-1.100 1.100-1.100 2.600s1.100 3 1.300 3.200c.2.200 2.200 3.400 5.400 4.700 2 .8 2.800.9 3.800.7.600-.1 1.900-.8 2.200-1.500.3-.7.300-1.400.2-1.500-.1-.2-.3-.3-.6-.4z"/></svg>
+  <span>Написать в WhatsApp</span>
+</a>
+
+<a class="fab fab-call" href="tel:+79273451189" aria-label="Позвонить">
+  <svg viewBox="0 0 24 24"><path d="M6.6 10.8c1.4 2.8 3.8 5.1 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1C10.6 21 3 13.400 3 4c0-.6.4-1 1-1h3.500c.6 0 1 .4 1 1 0 1.300.2 2.500.6 3.600.1.300 0 .7-.2 1l-2.300 2.200z"/></svg>
+  <span>Позвонить</span>
+</a>
+
+<script>
+const WA = '79273451189';
+document.querySelectorAll('.wa-link').forEach(a=>{
+  a.href = 'https://wa.me/'+WA+'?text='+encodeURIComponent(a.dataset.msg);
+});
+
+// header
+const hdr=document.getElementById('hdr');
+addEventListener('scroll',()=>hdr.classList.toggle('solid',scrollY>40),{passive:true});
+const menu=document.getElementById('menu');
+document.getElementById('burger').onclick=()=>menu.classList.toggle('open');
+menu.addEventListener('click',e=>{if(e.target.tagName==='A')menu.classList.remove('open')});
+
+// bubbles
+const bw=document.getElementById('bubbles');
+for(let i=0;i<22;i++){const s=document.createElement('span');const z=8+Math.random()*34;
+  s.style.cssText=`width:${z}px;height:${z}px;left:${Math.random()*100}%;animation-duration:${9+Math.random()*12}s;animation-delay:${-Math.random()*18}s`;bw.appendChild(s);}
+
+// working hours in Ufa time (UTC+5)
+function ufaNow(){const d=new Date(Date.now()+new Date().getTimezoneOffset()*60000+5*3600000);return d;}
+function updateStatus(){
+  const d=ufaNow(), day=d.getDay(), mins=d.getHours()*60+d.getMinutes();
+  const dot=document.getElementById('dot'), t=document.getElementById('statusText');
+  const openDay = day!==1;
+  if(openDay && mins>=660 && mins<1380){dot.className='dot open';t.textContent='Сейчас открыто · до 23:00';}
+  else{dot.className='dot closed';
+    if(day===1) t.textContent='Сегодня выходной · откроемся во вторник в 11:00';
+    else if(openDay && mins<660) t.textContent='Сейчас закрыто · откроемся в 11:00';
+    else t.textContent = (day===0) ? 'Сейчас закрыто · завтра выходной, откроемся во вторник в 11:00' : 'Сейчас закрыто · откроемся завтра в 11:00';}
+  document.querySelectorAll('#days li').forEach(li=>li.classList.toggle('today',+li.dataset.d===day));
+}
+updateStatus();setInterval(updateStatus,60000);
+
+// reveal + bars
+const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}}),{threshold:.12});
+document.querySelectorAll('.reveal').forEach(el=>io.observe(el));
+const bio=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.querySelectorAll('.bar').forEach(b=>b.querySelector('.fl').style.width=b.dataset.v+'%');bio.unobserve(e.target)}}),{threshold:.3});
+bio.observe(document.getElementById('bars'));
+
+// lightbox
+const lb=document.getElementById('lb'),lbi=lb.querySelector('img');
+document.querySelectorAll('.ggrid figure').forEach(f=>f.onclick=()=>{lbi.src=f.querySelector('img').src;lb.classList.add('on')});
+lb.onclick=()=>lb.classList.remove('on');
+addEventListener('keydown',e=>{if(e.key==='Escape')lb.classList.remove('on')});
+</script>
+</body>
+</html>
